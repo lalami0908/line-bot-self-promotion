@@ -27,7 +27,7 @@ if channel_access_token is None:
     sys.exit(1)
 
 line_bot_api = LineBotApi(channel_access_token)
-handler = WebhookParser(channel_secret)
+handler = WebhookHandler(channel_secret)
 
 
 @app.route("/callback", methods=['POST'])
