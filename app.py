@@ -1,6 +1,7 @@
 import os
-from flask import Flask, request, abort
 import sys
+import json
+from flask import Flask, request, abort
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -8,7 +9,12 @@ from linebot import (
 from linebot.exceptions import (
     InvalidSignatureError
 )
-from linebot.models import *
+from linebot.models import (
+    MessageEvent, TextMessage, StickerMessage, TextSendMessage, StickerSendMessage,
+    SourceUser, FollowEvent
+)
+
+from chatBot import ChatBot
 
 app = Flask(__name__)
 
@@ -45,7 +51,18 @@ def callback():
     return 'OK'
 
 
+@ handler.add(FollowEvent)
+def handle_follow(event):
+    # get user Profile and introduce the chat Bot
+    if isinstance(event.source, SourceUser):
+        profile = line_bot_api.get_profile(event.source.user_id)
+        message = TextSendMessage(
+            text=msgJson['greeting'] + profile.display_name + msgJson['greetingText'])
+        line_bot_api.reply_message(event.reply_token, message)
+
 # handle text message
+
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = TextSendMessage(text=event.message.text)
