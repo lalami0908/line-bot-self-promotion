@@ -46,6 +46,13 @@ def buttonsTemplate(reply_token, func_name):
 
 def textsMessage(reply_token, func_name):
     messages = [TextMessage(text=i) for i in msgJson[func_name+'Texts']]
+
+    if msgJson.get(func_name + 'ImgUrl') != None:
+        image_url = createImgUrl(msgJson[func_name + 'ImgUrl'])
+        image = ImageSendMessage(
+            original_content_url=image_url, preview_image_url=image_url)
+        messages.append(image)
+
     line_bot_api.reply_message(reply_token, messages)
 
 
