@@ -68,8 +68,11 @@ def handle_follow(event):
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
-    line_bot_api.reply_message(event.reply_token, message)
+    text = event.message.text
+
+    chatBot = ChatBot(text)
+    reply_msg_function, func_name = chatBot.judgeMsgAndGetReply()
+    reply_msg_function(event.reply_token, func_name)
 
 
 if __name__ == "__main__":
