@@ -45,7 +45,8 @@ def buttonsTemplate(reply_token, func_name):
 
 
 def textsMessage(reply_token, func_name):
-    print("textsMessage")
+    messages = [TextMessage(text=i) for i in msgJson[func_name+'Texts']]
+    line_bot_api.reply_message(reply_token, messages)
 
 
 def taskTemplate(reply_token, func_name, image_url=None):
