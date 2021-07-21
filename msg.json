@@ -36,6 +36,41 @@
     "projectTitle": "作品選單",
     "projectText": "請選擇想要查看的作品",
     "projectButton": ["企業年報財報問答", "台大供需平臺"],
-    "projectImgUrl": "/static/pictures/project.png"
+    "projectImgUrl": "/static/pictures/project.png",
+
+    "education": "教育",
+    "educationTexts": ["您好，我叫王佩琳，今年大四畢業，即將就讀台大資訊管理研究所。\n還請多多指教。(⁎⁍̴̛ᴗ⁍̴̛⁎)",
+                      "大學期間修課",
+                      "研究所規劃"],
+
+    "educationHasSticker" : "True",
+    "educationStickerId1" : "11537",
+    "educationStickerId2" : "52002741",
+
+    "gssIntern": "叡揚實習",
+    "gssInternTexts": ["實習期間參與",
+                      "主要負責"],
+
+    "projectProcessManagement": "專案流程管理",
+    "projectProcessManagementTexts": ["專案為",
+                      "主要負責"],
+
+    "dynamicVehicleScheduling": "動態派車規劃",
+    "dynamicVehicleSchedulingTexts": ["專案為",
+                      "主要負責"],
+
+    "personality": "個性與興趣",
+    "personalityTexts": ["性格開朗",
+                    "喜歡打排球"],
+
+    "QAsystem": "企業年報財報問答",
+    "QAsystemTexts": ["畢業專題為",
+                        "主要負責"],
+
+    "supplyAndDemandPlatform": "台大供需平臺",
+    "supplyAndDemandPlatformTexts": ["期末專案為",
+                        "主要負責"],
+    "ability": "能力",
+    "abilityTexts": ["以下是我的能力列表"]
 
 }
