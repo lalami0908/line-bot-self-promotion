@@ -71,6 +71,7 @@
     "supplyAndDemandPlatformTexts": ["期末專案為",
                         "主要負責"],
     "ability": "能力",
-    "abilityTexts": ["以下是我的能力列表"]
+    "abilityTexts": ["以下是我的能力列表"],
+    "abilityImgUrl": "/static/pictures/ability.png" 
 
 }
