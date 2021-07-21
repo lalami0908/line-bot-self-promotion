@@ -7,6 +7,12 @@ with open('./msg.json') as msg_file:
 class ChatBot:
     # mapping: 中文訊息 -> 英文 function name
     templateMap = {
+        msgJson['mainFunction']: "mainFunction",
+        msgJson['selfIntroduction']: "selfIntroduction",
+        msgJson['professionalAbility']: "professionalAbility",
+        msgJson['otherTool']: "otherTool",
+        msgJson['experience']: "experience",
+        msgJson['project']: "project",
 
     }
 
