@@ -16,7 +16,7 @@ from linebot.models import (
 
 from chatBot import ChatBot
 
-app = Flask(__name__)
+app = Flask(__name__,  static_url_path='/static')
 
 # Channel Secret
 channel_secret = os.getenv('CHANNEL_SECRET', None)

@@ -2,35 +2,34 @@
     "greeting": "親愛的 ",
     "greetingText": " 您好\n感謝您成為 lalami BOT 的好友.\n很高興能夠為您服務!ʕ´•ᴥ•`ʔ\n請先對我輸入任何文字",
 
-      
     "mainFunction": "主要功能",
     "mainFunctionTitle": "主要功能選單",
     "mainFunctionText": "請選擇想要查看的功能",
-    "mainFunctionButton": ["自我介紹", "專業能力", "其他小工具"], 
+    "mainFunctionButton": ["自我介紹", "專業能力", "其他小工具"],
+    "mainFunctionImgUrl": "/static/pictures/mainFunction.png",
 
     "selfIntroduction": "自我介紹",
     "selfIntroductionTitle": "自我介紹選單",
     "selfIntroductionText": "請選擇想要了解的自我介紹",
     "selfIntroductionButton": ["教育", "經歷", "個性與興趣"],
+    "selfIntroductionImgUrl": "/static/pictures/selfIntroduction.jpg",
 
     "professionalAbility": "專業能力",
     "professionalAbilityTitle": "專業能力選單",
     "professionalAbilityText": "請選擇想要理解的專業能力",
     "professionalAbilityButton": ["作品", "能力"],
+    "professionalAbilityImgUrl": "/static/pictures/professionalAbility.png",
 
     "otherTool": "其他小工具",
     "otherToolTitle": "其他小工具選單",
     "otherToolText": "請選擇其他小工具",
     "otherToolButton": ["工具1", "工具2"],
+    "otherToolImgUrl": "/static/pictures/otherTool.png",
     
     "experience": "經歷",
     "experienceTitle": "經歷選單",
     "experienceText": "請選擇想要查看的經歷",
     "experienceButton": ["叡揚實習", "專案流程管理", "動態派車規劃"],
-
-    "project": "作品",
-    "projectTitle": "作品選單",
-    "projectText": "請選擇想要查看的作品",
-    "projectButton": ["企業年報財報問答", "台大供需平臺"]
+    "experienceImgUrl": "/static/pictures/experience.png"
 
 }

@@ -29,6 +29,10 @@ with open('./msg.json') as msg_file:
     msgJson = json.load(msg_file)
 
 
+def createImgUrl(ImgfileName):
+    return 'https://' + appName + '.herokuapp.com' + ImgfileName
+
+
 def buttonsTemplate(reply_token, func_name):
     image_url = createImgUrl(msgJson[func_name + 'ImgUrl'])
     buttons_template = ButtonsTemplate(title=msgJson[func_name + 'Title'], text=msgJson[func_name+'Text'],
