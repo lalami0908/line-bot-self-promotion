@@ -30,6 +30,12 @@
     "experienceTitle": "經歷選單",
     "experienceText": "請選擇想要查看的經歷",
     "experienceButton": ["叡揚實習", "專案流程管理", "動態派車規劃"],
-    "experienceImgUrl": "/static/pictures/experience.png"
+    "experienceImgUrl": "/static/pictures/experience.png",
+
+    "project": "作品",
+    "projectTitle": "作品選單",
+    "projectText": "請選擇想要查看的作品",
+    "projectButton": ["企業年報財報問答", "台大供需平臺"],
+    "projectImgUrl": "/static/pictures/project.png"
 
 }
