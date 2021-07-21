@@ -35,6 +35,9 @@ if channel_access_token is None:
 line_bot_api = LineBotApi(channel_access_token)
 handler = WebhookHandler(channel_secret)
 
+with open('./msg.json') as msg_file:
+    msgJson = json.load(msg_file)
+
 
 @app.route("/callback", methods=['POST'])
 def callback():
