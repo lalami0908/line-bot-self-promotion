@@ -53,6 +53,12 @@ def textsMessage(reply_token, func_name):
             original_content_url=image_url, preview_image_url=image_url)
         messages.append(image)
 
+    if msgJson.get(func_name + 'HasSticker') != None:
+        package_id = msgJson[func_name + 'StickerId1']
+        sticker_id = msgJson[func_name + 'StickerId2']
+        sticker = StickerSendMessage(
+            package_id=package_id, sticker_id=sticker_id)
+        messages.append(sticker)
     line_bot_api.reply_message(reply_token, messages)
 
 
