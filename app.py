@@ -75,6 +75,13 @@ def handle_message(event):
     reply_msg_function(event.reply_token, func_name)
 
 
+@handler.add(MessageEvent, message=StickerMessage)
+def handle_sticker(event):
+    chatBot = ChatBot("")
+    reply_msg_function, func_name = chatBot.judgeMsgAndGetReply()
+    reply_msg_function(event.reply_token, func_name)
+
+
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
