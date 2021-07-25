@@ -5,7 +5,7 @@
     "mainFunction": "主要功能",
     "mainFunctionTitle": "主要功能選單",
     "mainFunctionText": "請選擇想要查看的功能",
-    "mainFunctionButton": ["自我介紹", "專業能力", "其他小工具"],
+    "mainFunctionButton": ["自我介紹", "專業能力", "其他小工具(新聞)"],
     "mainFunctionImgUrl": "/static/pictures/mainFunction.png",
 
     "selfIntroduction": "自我介紹",
@@ -20,10 +20,10 @@
     "professionalAbilityButton": ["作品", "能力"],
     "professionalAbilityImgUrl": "/static/pictures/professionalAbility.png",
 
-    "otherTool": "其他小工具",
-    "otherToolTitle": "其他小工具選單",
-    "otherToolText": "請選擇其他小工具",
-    "otherToolButton": ["工具1", "工具2"],
+    "otherTool": "其他小工具(新聞)",
+    "otherToolTitle": "其他小工具(新聞)選單",
+    "otherToolText": "請選擇其他小工具(新聞)",
+    "otherToolButton": ["聯合報", "科技新報"],
     "otherToolImgUrl": "/static/pictures/otherTool.png",
     
     "experience": "經歷",
@@ -72,6 +72,9 @@
                         "主要負責"],
     "ability": "能力",
     "abilityTexts": ["以下是我的能力列表"],
-    "abilityImgUrl": "/static/pictures/ability.png" 
+    "abilityImgUrl": "/static/pictures/ability.png",
+    
+    "tool1": "聯合報",
+    "tool2": "科技新報"
 
 }

@@ -71,15 +71,15 @@ def handle_message(event):
     text = event.message.text
 
     chatBot = ChatBot(text)
-    reply_msg_function, func_name = chatBot.judgeMsgAndGetReply()
-    reply_msg_function(event.reply_token, func_name)
+    reply_msg_function, func_name, msg = chatBot.judgeMsgAndGetReply()
+    reply_msg_function(event.reply_token, func_name, msg)
 
 
 @handler.add(MessageEvent, message=StickerMessage)
 def handle_sticker(event):
     chatBot = ChatBot("")
-    reply_msg_function, func_name = chatBot.judgeMsgAndGetReply()
-    reply_msg_function(event.reply_token, func_name)
+    reply_msg_function, func_name, msg = chatBot.judgeMsgAndGetReply()
+    reply_msg_function(event.reply_token, func_name, msg)
 
 
 if __name__ == "__main__":

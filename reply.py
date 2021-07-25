@@ -33,7 +33,7 @@ def createImgUrl(ImgfileName):
     return 'https://' + appName + '.herokuapp.com' + ImgfileName
 
 
-def buttonsTemplate(reply_token, func_name):
+def buttonsTemplate(reply_token, func_name, msg=None):
     image_url = createImgUrl(msgJson[func_name + 'ImgUrl'])
     buttons_template = ButtonsTemplate(title=msgJson[func_name + 'Title'], text=msgJson[func_name+'Text'],
                                        thumbnail_image_url=image_url,
@@ -44,8 +44,11 @@ def buttonsTemplate(reply_token, func_name):
     line_bot_api.reply_message(reply_token, template_message)
 
 
-def textsMessage(reply_token, func_name):
-    messages = [TextMessage(text=i) for i in msgJson[func_name+'Texts']]
+def textsMessage(reply_token, func_name, msg=None):
+    if msg is None:
+        messages = [TextMessage(text=i) for i in msgJson[func_name+'Texts']]
+    else:
+        messages = TextMessage(text=msg)
 
     if msgJson.get(func_name + 'ImgUrl') != None:
         image_url = createImgUrl(msgJson[func_name + 'ImgUrl'])
@@ -60,7 +63,3 @@ def textsMessage(reply_token, func_name):
             package_id=package_id, sticker_id=sticker_id)
         messages.append(sticker)
     line_bot_api.reply_message(reply_token, messages)
-
-
-def taskTemplate(reply_token, func_name, image_url=None):
-    print("taskTemplate")
