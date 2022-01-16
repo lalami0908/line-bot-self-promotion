@@ -2,8 +2,8 @@ import os
 import sys
 import json
 from flask import Flask, request, abort
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
+# from dotenv import load_dotenv, find_dotenv
+# load_dotenv(find_dotenv())
 
 from linebot import (
     LineBotApi, WebhookHandler
