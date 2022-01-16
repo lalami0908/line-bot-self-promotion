@@ -25,27 +25,32 @@
     "otherToolText": "請選擇其他小工具(新聞)",
     "otherToolButton": ["聯合報", "科技新報"],
     "otherToolImgUrl": "/static/pictures/otherTool.png",
-    
+
     "experience": "經歷",
     "experienceTitle": "經歷選單",
     "experienceText": "請選擇想要查看的經歷",
-    "experienceButton": ["叡揚實習", "專案流程管理", "動態派車規劃"],
+    "experienceButton": ["翱翔實習","叡揚實習", "專案流程管理", "動態派車規劃"],
     "experienceImgUrl": "/static/pictures/experience.png",
 
     "project": "作品",
     "projectTitle": "作品選單",
     "projectText": "請選擇想要查看的作品",
-    "projectButton": ["企業年報財報問答", "台大供需平臺"],
+    "projectButton": ["BinanceTelebot","企業年報財報問答", "台大供需平臺"],
     "projectImgUrl": "/static/pictures/project.png",
 
     "education": "教育",
-    "educationTexts": ["您好，我叫王佩琳，今年大四畢業即將就讀台大資訊管理研究所。\n還請多多指教。(⁎⁍̴̛ᴗ⁍̴̛⁎)",
+    "educationTexts": ["您好，我叫王佩琳，今年就讀台大資訊管理研究所碩一。\n還請多多指教。(⁎⁍̴̛ᴗ⁍̴̛⁎)",
                       "大學期間修課期間受到資管系上扎實的教育，如「資料結構、演算法、作業系統、線性代數」等，學習了基礎的程式設計的觀念，也選修數據相關課程如「大數據與商業分析、統計學習初論、機器學習」等，和 Web 課程，學習 ReactJs、NodeJs 實作",
-                      "研究所目前規劃深入自然語言處理領域，希望能結合商業智慧與知識管理，利用各種結構或非結構文本創造價值"],
+                      "研究所目前在鑽研自然語言處理領域，希望能結合商業智慧與知識管理，利用各種結構或非結構文本創造價值"],
 
     "educationHasSticker" : "True",
     "educationStickerId1" : "11537",
     "educationStickerId2" : "52002741",
+
+    "owlsomeIntern": "翱翔實習",
+    "owlsomeInternTexts": ["實習期間參與一與國研院科政中心研究計畫",
+        "建立兩模型，一為以文件為核心的分類模型，接受輸入科技計文本，判斷所屬的研究主題與重大議題。",
+        "二為以語句為核心的分類模型，分析並判斷該語句是否有描述特定概念(目標、措施、技術、效益)"],
 
     "gssIntern": "叡揚實習",
     "gssInternTexts": ["實習期間參與一整合版本控制、源代碼掃描、構建、部署工具的平台專案",
@@ -63,6 +68,9 @@
     "personalityTexts": ["性格開朗，樂於參與團體活動與社交，做事負責認真",
                     "興趣為喜歡打排球，參加系排四年，也擔任過系女排正副隊長"],
 
+    "BinanceTelebot": "BinanceTelebot",
+    "BinanceTelebotTexts": ["使用 telegram chatbot，定時排程到交易所爬取實時數據，計算進出/場邏輯，當滿足策略時通知推送給有訂閱特定幣種的用戶"],
+
     "QAsystem": "企業年報財報問答",
     "QAsystemTexts": ["大學畢業專題，結合 Senetence embedding 和 Question Answering 處理對年報與財報口語化的長句問答",
                         "主要負責資料前處理、技術嘗試與系統前後端呈現"],
@@ -73,7 +81,7 @@
     "ability": "能力",
     "abilityTexts": ["以下是我的能力列表"],
     "abilityImgUrl": "/static/pictures/ability.png",
-    
+
     "tool1": "聯合報",
     "tool2": "科技新報"
 

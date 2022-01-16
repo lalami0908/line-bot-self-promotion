@@ -47,10 +47,12 @@ class ChatBot:
 
     textMap = {
         msgJson['education']: "education",
+        msgJson['owlsomeIntern']: "owlsomeIntern",
         msgJson['gssIntern']: "gssIntern",
         msgJson['projectProcessManagement']: "projectProcessManagement",
         msgJson['dynamicVehicleScheduling']: "dynamicVehicleScheduling",
         msgJson['personality']: "personality",
+        msgJson['BinanceTelebot']: "BinanceTelebot",
         msgJson['QAsystem']: "QAsystem",
         msgJson['supplyAndDemandPlatform']: "supplyAndDemandPlatform",
         msgJson['ability']: "ability"
